@@ -1,19 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
 
 @theme {
   --color-primary: #f53838;
   --color-secondry: #f53838;
   --color-primary-text: #4f5665;
   --color-heading-text: #0b132a;
+  --font-primary: "Rubik", serif;
 }
 
 @layer {
   .section-container {
-    @apply max-w-[1440px] container mx-auto px-4 py-12;
+    @apply max-w-[1440px] container mx-auto px-4 py-28;
   }
 }
 
-.swiper-pagination-bullet{
+/* .swiper-pagination-bullet{
   width: 15px;
   height: 15px;
   background: #DDE0E4;
@@ -26,7 +33,7 @@
   opacity: 1;
   transform: scale(1.2);
   transition: transform 0.2s;
-}
+} */
 .swiper-navigation-icon {
   display: none !important;
 }
